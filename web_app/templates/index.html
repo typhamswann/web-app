@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Ready</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Paper Ready</h1>
+    <p>Tooling to turn messy research code into clean repositories. Drop in files and/or directories below:</p>
+
+    <!-- Drop Area -->
+    <div id="drop-area">
+        <p>Drag & drop files or directories here</p>
+    </div>
+
+    <!-- Loading GIF -->
+    <img id="loading-gif" src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading...">
+
+    <!-- Status Updates -->
+    <div id="status-updates"></div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
